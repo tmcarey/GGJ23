@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4f0277bf-ef1c-4132-b7ae-51a437d77b3b}">
+		<property name="assetPath">
+			<value>FF_WP_foley_percolating_coffee_rumble.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>9.595102040816327</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b565315c-913e-44f4-b038-e3c33fb31a00}</destination>
+		</relationship>
+	</object>
+</objects>

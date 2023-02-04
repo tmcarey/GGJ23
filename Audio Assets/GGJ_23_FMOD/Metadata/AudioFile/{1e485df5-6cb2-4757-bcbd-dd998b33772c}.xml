@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1e485df5-6cb2-4757-bcbd-dd998b33772c}">
+		<property name="assetPath">
+			<value>ComputerRoomBeeps_SFXB.3633.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>90.447999999999993</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b565315c-913e-44f4-b038-e3c33fb31a00}</destination>
+		</relationship>
+	</object>
+</objects>

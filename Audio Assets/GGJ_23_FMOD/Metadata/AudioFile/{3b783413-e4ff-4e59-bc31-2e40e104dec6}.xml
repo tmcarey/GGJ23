@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3b783413-e4ff-4e59-bc31-2e40e104dec6}">
+		<property name="assetPath">
+			<value>GGJ_23_Lab.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.2836875000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b565315c-913e-44f4-b038-e3c33fb31a00}</destination>
+		</relationship>
+	</object>
+</objects>

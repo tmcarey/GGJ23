@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e7657f19-7648-4db4-8791-1aaf3e23b4c0}">
+		<property name="assetPath">
+			<value>ESM_Subtle_Ceramic_or_Glass_Drop_Household_Bright_Clink_Metallic.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>192</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.91798958333333336</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b565315c-913e-44f4-b038-e3c33fb31a00}</destination>
+		</relationship>
+	</object>
+</objects>
