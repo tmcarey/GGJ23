@@ -5,12 +5,6 @@ using UnityEngine.InputSystem;
 
 public class InteractController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     public void OnInteract(InputValue val)
     { 
         if(_interactable)
@@ -23,15 +17,13 @@ public class InteractController : MonoBehaviour
     void Update()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.GetRayIntersection(ray,Mathf.Infinity);
+        bool hit = Physics.Raycast(ray,out var hitInfo, Mathf.Infinity);
         
         if(hit)
-            Debug.Log(hit.collider);
-        
-        if(hit.collider != null)
         {
-            if(hit.collider.TryGetComponent(out Interactable interactable))
+            if(hitInfo.collider.TryGetComponent(out Interactable interactable))
             {
+                Debug.Log("Hovering over interactable");
                 _interactable = interactable;
             }
             else

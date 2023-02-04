@@ -100,7 +100,7 @@ ENDCG
           Stencil
           {
               Ref 4
-              Comp Equal
+              Comp NotEqual
           }
 
       CGPROGRAM
@@ -115,7 +115,7 @@ ENDCG
           fixed4 frag( v2f IN ) : SV_Target
           {
               fixed4 c = tex2D( _MainTex, IN.texcoord );
-              return _OccludedColor * c.a;
+              return 0;
           }
       ENDCG
       }
