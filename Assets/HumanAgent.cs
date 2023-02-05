@@ -6,8 +6,12 @@ using UnityEngine.AI;
 public class HumanAgent : MonoBehaviour
 {
     [Header("Setup")] [SerializeField] private NavMeshAgent agent;
-    [SerializeField] private Transform target;
+    [SerializeField] private Animator anim;
     [SerializeField] private NpcRoutePoint[] schedule;
+    [SerializeField] private Transform animParent;
+    
+    [Header("Config")] 
+    [SerializeField] private float speedAnimMultiplier = 1.5f;
 
     [Serializable]
     private struct NpcRoutePoint
@@ -15,12 +19,19 @@ public class HumanAgent : MonoBehaviour
         public float waitTime;
         public Transform targetPoint;
     }
-    
+
     private int currentScheduleIndex;
+    private static readonly int Speed = Animator.StringToHash("Speed");
 
     private void Start()
     {
         StartCoroutine(DoSchedule());
+    }
+
+    private void Update()
+    {
+            anim.SetFloat(Speed, agent.isStopped ? 0 : agent.velocity.magnitude * speedAnimMultiplier);
+        animParent.localRotation = Quaternion.LookRotation(agent.desiredVelocity, Vector3.up);
     }
 
     private IEnumerator DoSchedule()

@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [Header("Setup")] [SerializeField] private HackableDevice goalDevice;
     [SerializeField] private GameObject winState;
     [SerializeField] private GameObject lossState;
+    [SerializeField] private GameObject pauseMenu;
     [SerializeField] private TextMeshProUGUI timer;
 
     [Header("Config")] [SerializeField] private LayerMask hackLosLayerMask;
@@ -21,12 +23,20 @@ public class GameManager : MonoBehaviour
     private float startTime;
     private float timeRemaining;
 
+    public bool IsPaused => pauseMenu.activeSelf;
+
     void Awake()
     {
         _instance = this;
         timeRemaining = levelTime;
         startTime = Time.time;
         winState.SetActive(false);
+    }
+
+    public void QuitGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Menu");
     }
 
     private void Update()
@@ -77,5 +87,19 @@ public class GameManager : MonoBehaviour
         }
 
         return false;
+    }
+    
+    public void TogglePause()
+    {
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        
+        if (pauseMenu.activeSelf)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
     }
 }

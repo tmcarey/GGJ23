@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class DestroyOnAwake : MonoBehaviour
 {
+    public bool ShouldDestroy;
     // Start is called before the first frame update
     void Awake()
     {
-        Destroy(gameObject);
+        if(ShouldDestroy)
+            Destroy(gameObject);
     }
 
     // Update is called once per frame

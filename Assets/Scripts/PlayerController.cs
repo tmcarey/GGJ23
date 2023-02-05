@@ -31,6 +31,11 @@ public class PlayerController : MonoBehaviour
     {
         moveDir = value.Get<Vector2>() * moveSpeed;
     }
+    
+    private void OnPause(InputValue value)
+    {
+        GameManager.Instance.TogglePause();
+    }
 
     private void Update()
     {
