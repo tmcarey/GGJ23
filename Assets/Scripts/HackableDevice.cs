@@ -29,8 +29,6 @@ public class HackableDevice : MonoBehaviour
 
     public void OnHover(bool hoverState)
     {
-        GetComponentInChildren<SpriteRenderer>().transform.localScale =
-            new Vector3(1,1,1) * (hoverState ? 1.2f : 1.0f);
     }
 
     public void TryHack()
@@ -64,6 +62,6 @@ public class HackableDevice : MonoBehaviour
         {
             //StartCoroutine(CheckHackProximityRoutine());
         }
-        GetComponentInChildren<Interactable>().onHover.AddListener(OnHover);
+        GetComponent<Interactable>().onHover.AddListener(OnHover);
     }
 }

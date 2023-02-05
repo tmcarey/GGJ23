@@ -268,7 +268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4728399718225659214, guid: c5e2e5822e2259e46baf00483338478a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 1.195
       objectReference: {fileID: 0}
     - target: {fileID: 4728399718225659214, guid: c5e2e5822e2259e46baf00483338478a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -703,6 +703,7 @@ GameObject:
   - component: {fileID: 161862135}
   - component: {fileID: 161862138}
   - component: {fileID: 161862137}
+  - component: {fileID: 161862139}
   m_Layer: 0
   m_Name: monitor
   m_TagString: Untagged
@@ -813,6 +814,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 8.21, y: 1.1315147, z: 0.20000018}
   m_Center: {x: -5.561223e-18, y: 0.2523701, z: 2.3539092e-15}
+--- !u!114 &161862139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161862134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340ea1316118f4b40be9fe05efd8e663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 161862137}
+        m_TargetAssemblyTypeName: HackableDevice, Assembly-CSharp
+        m_MethodName: TryHack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  onHover:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &184840759
 GameObject:
   m_ObjectHideFlags: 0
@@ -8938,7 +8969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4728399718225659214, guid: c5e2e5822e2259e46baf00483338478a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 4728399718225659214, guid: c5e2e5822e2259e46baf00483338478a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9733,7 +9764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4728399718225659214, guid: c5e2e5822e2259e46baf00483338478a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 4728399718225659214, guid: c5e2e5822e2259e46baf00483338478a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10068,6 +10099,7 @@ GameObject:
   - component: {fileID: 935866581}
   - component: {fileID: 935866584}
   - component: {fileID: 935866583}
+  - component: {fileID: 935866585}
   m_Layer: 0
   m_Name: monitor (1)
   m_TagString: Untagged
@@ -10178,6 +10210,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 8.210002, y: 3.0664554, z: 0.20000161}
   m_Center: {x: 5.072182e-16, y: 0.01677351, z: 6.4821466e-17}
+--- !u!114 &935866585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935866580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340ea1316118f4b40be9fe05efd8e663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 935866583}
+        m_TargetAssemblyTypeName: HackableDevice, Assembly-CSharp
+        m_MethodName: TryHack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  onHover:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1023186646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10674,6 +10736,7 @@ GameObject:
   - component: {fileID: 1069840950}
   - component: {fileID: 1069840953}
   - component: {fileID: 1069840952}
+  - component: {fileID: 1069840954}
   m_Layer: 0
   m_Name: camera
   m_TagString: Untagged
@@ -10741,7 +10804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069840949}
   m_LocalRotation: {x: -0.5879176, y: 0.3928777, z: 0.39287773, w: 0.5879177}
-  m_LocalPosition: {x: -10.99, y: 0.63, z: -0.9}
+  m_LocalPosition: {x: -10.99, y: 3.28, z: -0.9}
   m_LocalScale: {x: 0.64645, y: 0.64645, z: 0.64645}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10784,6 +10847,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7400001, y: 1.1600002, z: 0.2000001}
   m_Center: {x: -0.00000047683716, y: 0, z: 0}
+--- !u!114 &1069840954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069840949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340ea1316118f4b40be9fe05efd8e663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1069840952}
+        m_TargetAssemblyTypeName: HackableDevice, Assembly-CSharp
+        m_MethodName: TryHack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  onHover:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1079619102
 GameObject:
   m_ObjectHideFlags: 0
@@ -11271,6 +11364,7 @@ GameObject:
   - component: {fileID: 1133943112}
   - component: {fileID: 1133943115}
   - component: {fileID: 1133943114}
+  - component: {fileID: 1133943116}
   m_Layer: 0
   m_Name: camera (1)
   m_TagString: Untagged
@@ -11338,7 +11432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133943111}
   m_LocalRotation: {x: -0.69352704, y: -0.13791376, z: -0.13791366, w: 0.69352716}
-  m_LocalPosition: {x: -15.05, y: 0.63, z: 0.66}
+  m_LocalPosition: {x: -15.05, y: 4.16, z: 0.66}
   m_LocalScale: {x: 0.64645, y: 0.64645, z: 0.64645}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11381,6 +11475,36 @@ MonoBehaviour:
   visionConePrefab: {fileID: 4389650656409572798, guid: 7805ccf6b434e3e47a54ddae478e0d21, type: 3}
   startHacked: 0
   canHackFreely: 0
+--- !u!114 &1133943116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133943111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340ea1316118f4b40be9fe05efd8e663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1133943115}
+        m_TargetAssemblyTypeName: HackableDevice, Assembly-CSharp
+        m_MethodName: TryHack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  onHover:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1138819727
 GameObject:
   m_ObjectHideFlags: 0
@@ -13318,7 +13442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4728399718225659214, guid: c5e2e5822e2259e46baf00483338478a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 4728399718225659214, guid: c5e2e5822e2259e46baf00483338478a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14182,7 +14306,7 @@ PrefabInstance:
     - target: {fileID: 1863634047242936970, guid: bd61deeb628509848a61c286a5135842, type: 3}
       propertyPath: schedule.Array.data[2].targetPoint
       value: 
-      objectReference: {fileID: 1912044062}
+      objectReference: {fileID: 2140310303}
     - target: {fileID: 1863634047242936970, guid: bd61deeb628509848a61c286a5135842, type: 3}
       propertyPath: schedule.Array.data[3].targetPoint
       value: 
@@ -15225,6 +15349,7 @@ GameObject:
   - component: {fileID: 2132165312}
   - component: {fileID: 2132165315}
   - component: {fileID: 2132165314}
+  - component: {fileID: 2132165316}
   m_Layer: 0
   m_Name: root state1 (1)
   m_TagString: Untagged
@@ -15292,7 +15417,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132165311}
   m_LocalRotation: {x: 0.0000003909704, y: 0.7071068, z: -0.7071068, w: 0.00000040978193}
-  m_LocalPosition: {x: -13.94, y: -0, z: 2.06}
+  m_LocalPosition: {x: -13.94, y: 0.96, z: 2.06}
   m_LocalScale: {x: 0.88573873, y: 0.88573873, z: 0.88573873}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15335,6 +15460,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.069205, y: 2.5000002, z: 0.20000063}
   m_Center: {x: -1.2845974, y: -1.3799498e-13, z: 1.091508e-15}
+--- !u!114 &2132165316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132165311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340ea1316118f4b40be9fe05efd8e663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2132165314}
+        m_TargetAssemblyTypeName: HackableDevice, Assembly-CSharp
+        m_MethodName: TryHack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  onHover:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2138419699
 GameObject:
   m_ObjectHideFlags: 0
