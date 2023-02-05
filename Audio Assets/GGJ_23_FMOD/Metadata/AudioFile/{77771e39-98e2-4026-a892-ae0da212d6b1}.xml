@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{77771e39-98e2-4026-a892-ae0da212d6b1}">
+		<property name="assetPath">
+			<value>GGJ23_Hack_sound .wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.6099166666666669</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b565315c-913e-44f4-b038-e3c33fb31a00}</destination>
+		</relationship>
+	</object>
+</objects>
