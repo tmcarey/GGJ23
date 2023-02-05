@@ -6,8 +6,8 @@ using UnityEngine.InputSystem;
 public class InteractController : MonoBehaviour
 {
     public void OnInteract(InputValue val)
-    { 
-        if(_interactable)
+    {
+        if (_interactable)
             _interactable.Interact();
     }
 
@@ -17,24 +17,32 @@ public class InteractController : MonoBehaviour
     void Update()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        bool hit = Physics.Raycast(ray,out var hitInfo, Mathf.Infinity);
-        
-        if(hit)
+        bool hit = Physics.Raycast(ray, out var hitInfo, Mathf.Infinity);
+
+        if (hit)
         {
-            if(hitInfo.collider.TryGetComponent(out Interactable interactable))
+            if (hitInfo.collider.TryGetComponent(out Interactable interactable))
             {
                 Debug.Log("Hovering over interactable");
+                if (_interactable != interactable)
+                {
+                    _interactable?.OnHover(false);
+                    _interactable = interactable;
+                    _interactable.OnHover(true);
+                }
+
                 _interactable = interactable;
             }
             else
             {
+                _interactable?.OnHover(false);
                 _interactable = null;
             }
         }
         else
-        {
-                _interactable = null;
+        { 
+            _interactable?.OnHover(false);
+            _interactable = null;
         }
-        
     }
 }

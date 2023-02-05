@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Config")] [SerializeField] private LayerMask hackLosLayerMask;
     [SerializeField] private float levelTime;
+    [SerializeField] private float hourTime;
     private static GameManager _instance;
     public static GameManager Instance => _instance;
     public bool DayActive { get; private set; } = true;
@@ -24,6 +26,15 @@ public class GameManager : MonoBehaviour
     private float timeRemaining;
 
     public bool IsPaused => pauseMenu.activeSelf;
+    
+    private List<HumanAgent> humanAgents = new List<HumanAgent>();
+
+    private int scheduleIdx;
+    
+    public void RegisterHuman(HumanAgent humanAgent)
+    {
+        humanAgents.Add(humanAgent);
+    }
 
     void Awake()
     {
@@ -31,6 +42,11 @@ public class GameManager : MonoBehaviour
         timeRemaining = levelTime;
         startTime = Time.time;
         winState.SetActive(false);
+    }
+
+    private void Start()
+    {
+        StartCoroutine(Scheduler());
     }
 
     public void QuitGame()
@@ -43,7 +59,7 @@ public class GameManager : MonoBehaviour
     {
         if (timeRemaining > 0)
         {
-            var timeRemaining = levelTime - (Time.time - startTime);
+            timeRemaining = levelTime - (Time.time - startTime);
             var minutes = Mathf.FloorToInt(timeRemaining / 60.0f);
             var seconds = Mathf.FloorToInt(timeRemaining % 60.0f);
 
@@ -102,4 +118,20 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
         }
     }
+
+    private IEnumerator Scheduler()
+    {
+        yield return new WaitForEndOfFrame();
+        while (timeRemaining > 0)
+        {
+            foreach(var agent in humanAgents)
+            {
+                agent.DoSchedule(scheduleIdx);
+            }
+
+            scheduleIdx++;
+            yield return new WaitForSeconds(hourTime);
+        }
+    }
+    
 }
