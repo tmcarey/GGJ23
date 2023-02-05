@@ -6244,11 +6244,11 @@ MonoBehaviour:
   CollisionTag: Player
   EventReference:
     Guid:
-      Data1: -579265328
-      Data2: 1283124612
-      Data3: 331973275
-      Data4: -1046813095
-    Path: event:/Ambience/Root Server Room
+      Data1: -1536186315
+      Data2: 1127337459
+      Data3: -239923012
+      Data4: 1031289492
+    Path: event:/Ambience/Power Room
   Event: 
   PlayEvent: 3
   StopEvent: 4
@@ -7178,11 +7178,11 @@ MonoBehaviour:
   CollisionTag: Player
   EventReference:
     Guid:
-      Data1: -1536186315
-      Data2: 1127337459
-      Data3: -239923012
-      Data4: 1031289492
-    Path: event:/Ambience/Power Room
+      Data1: 629552559
+      Data2: 1189863260
+      Data3: -1109035094
+      Data4: 670868454
+    Path: event:/Ambience/Lab Room
   Event: 
   PlayEvent: 3
   StopEvent: 4
@@ -9060,11 +9060,11 @@ MonoBehaviour:
   CollisionTag: Player
   EventReference:
     Guid:
-      Data1: 1434966263
-      Data2: 1240464901
-      Data3: -2048764272
-      Data4: -460711937
-    Path: event:/Ambience/Bathroom
+      Data1: -1536186315
+      Data2: 1127337459
+      Data3: -239923012
+      Data4: 1031289492
+    Path: event:/Ambience/Power Room
   Event: 
   PlayEvent: 3
   StopEvent: 4
@@ -13074,11 +13074,11 @@ MonoBehaviour:
   CollisionTag: Player
   EventReference:
     Guid:
-      Data1: 390252411
-      Data2: 1108444667
-      Data3: -104958067
-      Data4: -1569142674
-    Path: event:/Ambience/Storage Room
+      Data1: 1434966263
+      Data2: 1240464901
+      Data3: -2048764272
+      Data4: -460711937
+    Path: event:/Ambience/Bathroom
   Event: 
   PlayEvent: 3
   StopEvent: 4
