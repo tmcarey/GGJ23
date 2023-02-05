@@ -27,6 +27,12 @@ public class HackableDevice : MonoBehaviour
         isHacked = true;
     }
 
+    public void OnHover(bool hoverState)
+    {
+        GetComponentInChildren<SpriteRenderer>().transform.localScale =
+            new Vector3(1,1,1) * (hoverState ? 1.2f : 1.0f);
+    }
+
     public void TryHack()
     {
         if (!GameManager.Instance.CheckHackLos(transform.position))
@@ -58,5 +64,6 @@ public class HackableDevice : MonoBehaviour
         {
             //StartCoroutine(CheckHackProximityRoutine());
         }
+        GetComponentInChildren<Interactable>().onHover.AddListener(OnHover);
     }
 }
