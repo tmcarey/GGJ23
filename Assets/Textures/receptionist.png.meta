@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: 5f67e7ce418f61b4d9420deaa48dabe0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: receptionist_3
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 2466
+        width: 323
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdb218bd3dd7a448acbb67b456edd16
+      internalID: -679499013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: receptionist_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 2425
+        width: 212
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098f8573c436b314fb9f6293bca97045
+      internalID: -618151940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: receptionist_6
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 2461
+        width: 251
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10c9f1f74738ba4e9009fee8a383ec1
+      internalID: 1094825030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: receptionist_7
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2459
+        width: 155
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6587a0acd184d4daa92048a0430d43
+      internalID: 1464038099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: receptionist_10
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2445
+        width: 324
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dd2da65675a2e419a5743275c5254d
+      internalID: -1086874716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: receptionist_11
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 2437
+        width: 213
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e4cafb8252a8b4a90d06c591dda130
+      internalID: -1023958988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: receptionist_43
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2124
+        width: 324
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c29925827fda04f9bc0a0570b150d6
+      internalID: 703994722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: receptionist_44
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 2112
+        width: 155
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7c164064fa4514b9481f0dfbec5f37
+      internalID: 254475951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: receptionist_47
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2118
+        width: 323
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268eecfc93210ee49baa4d3499db295d
+      internalID: 1622363359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: receptionist_48
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 2122
+        width: 252
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71afc459563dafc45af0d2bfbe32ada4
+      internalID: -788348196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      receptionist_21: 439750623
+      receptionist_54: -985619079
+      receptionist_9: 1264575697
+      receptionist_0: -397870121
+      receptionist_24: -1243082439
+      receptionist_18: 656357318
+      receptionist_25: -884329951
+      receptionist_5: -618151940
+      receptionist_44: 254475951
+      receptionist_6: 1094825030
+      receptionist_63: -1567209646
+      receptionist_48: -788348196
+      receptionist_59: 23814055
+      receptionist_27: -1335429365
+      receptionist_55: 2135968658
+      receptionist_36: -1445718244
+      receptionist_47: 1622363359
+      receptionist_28: -1057867062
+      receptionist_14: -1338122771
+      receptionist_42: 799869262
+      receptionist_35: -1115811230
+      receptionist_41: 810236454
+      receptionist_39: 673963772
+      receptionist_17: 1316000472
+      receptionist_50: -616325258
+      receptionist_19: 1934616031
+      receptionist_7: 1464038099
+      receptionist_4: 1732200315
+      receptionist_58: 799821629
+      receptionist_43: 703994722
+      receptionist_45: 1673936827
+      receptionist_40: 12126788
+      receptionist_3: -679499013
+      receptionist_51: -1311364445
+      receptionist_31: 592117080
+      receptionist_2: 1662003585
+      receptionist_22: -1417986974
+      receptionist_30: -2117048435
+      receptionist_34: 1318524871
+      receptionist_32: 416299232
+      receptionist_10: -1086874716
+      receptionist_15: -520802964
+      receptionist_23: 998297926
+      receptionist_13: -351785836
+      receptionist_33: -268986570
+      receptionist_38: -956652525
+      receptionist_53: -2112225851
+      receptionist_1: -1223908709
+      receptionist_61: -1233060989
+      receptionist_11: -1023958988
+      receptionist_8: 845600738
+      receptionist_46: 922088452
+      receptionist_37: -1348294476
+      receptionist_20: 1930023351
+      receptionist_26: 1130502675
+      receptionist_52: -1538737237
+      receptionist_49: 206177749
+      receptionist_56: -1545389501
+      receptionist_57: 1678632308
+      receptionist_16: -1074423531
+      receptionist_29: -1020899512
+      receptionist_62: 476732309
+      receptionist_12: -307792770
+      receptionist_60: 439858354
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
