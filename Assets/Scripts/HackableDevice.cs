@@ -29,7 +29,7 @@ public class HackableDevice : MonoBehaviour
 
     public void TryHack()
     {
-        if (!canHackFreely || !GameManager.Instance.CheckHackLos(transform.position))
+        if (!GameManager.Instance.CheckHackLos(transform.position))
             return;
         
         Hack();
@@ -56,7 +56,7 @@ public class HackableDevice : MonoBehaviour
         }
         else
         {
-            StartCoroutine(CheckHackProximityRoutine());
+            //StartCoroutine(CheckHackProximityRoutine());
         }
     }
 }

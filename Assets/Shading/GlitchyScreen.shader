@@ -47,8 +47,8 @@ Shader "Custom/GlitchyScreen" {
 
             float4 frag (v2f i) : SV_Target {
                 float2 uv = i.uv;
-                uv.y += sin(uv.x * 10.0 * random(uv) + (_Time.y * _Speed)) * _Distortion;
-                uv.x += sin(uv.y * 10.0 + (_Time.y * _Speed)) * _Distortion;
+                uv.y += sin(uv.x * (10.0 + random(uv)) + (_Time.y * _Speed)) * _Distortion;
+                uv.x += sin(uv.y * (10.0 + random(uv)) + _Time.y * _Speed) * _Distortion;
                 return tex2D(_MainTex, uv);
             }
             ENDCG
